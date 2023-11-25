@@ -1,0 +1,129 @@
+@import url('./header.css');
+@import url('./footer.css');
+
+*{
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Founders Grotesk;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/Foto\ banner\ seccion\ discografia.png');
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.titulo{
+    color: #FFF;
+    text-align: center;
+    font-size: 13vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.titulo{
+        padding-top: 280px;
+}
+.tracklist{
+    padding-top: 3em;
+    color: #7B7B7B;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    row-gap: 1em;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
+
+.fotoalbum1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p {
+        color: #7B7B7B;
+        font-size: 30px;
+}
+
+.tracklist__info {
+    display: flex;
+    flex-direction: column; 
+    padding: 1em 0.4em;
+}
+
+.appleyspoti{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.4em;
+}
+
+.apple__container {
+    display: flex;
+    padding-left: 1em;
+    align-items: flex-end;
+}
+
+.spotify{
+    padding-left: 45px;
+}
+
+@media screen and (min-width:1000px) {
+.tracklist{
+    padding-top: 8.4em;
+}
+
+p {
+        color: #7B7B7B;
+        font-size: 35px;
+}
+}
+
+
+
+/* @media (max-width:1100px){
+    .tracklist__info{
+    padding-right: 100px;
+    }
+    .tracklist{
+        padding-right: 100px;
+    }
+    .trackList__info{
+        padding-right: 100px;
+    }
+}
+@media (max-width:1128px){
+    .tracklist__info{
+    padding-right: 100px;
+    }
+    .tracklist{
+        padding-right: 100px;
+    }
+    .trackList__info{
+        padding-right: 100px;
+    }
+}
+@media (max-width:700px){
+    .tracklist__info{
+    padding-right: 100px;
+    }
+    .tracklist{
+        padding-right: 100px;
+    }
+    .trackList__info{
+        padding-right: 100px;
+    }
+} */

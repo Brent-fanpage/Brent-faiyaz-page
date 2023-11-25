@@ -1,0 +1,152 @@
+:root {
+   --white:#fff;
+}
+
+header{
+   width:96%;
+   margin:0 auto;
+   top: 0%;
+   left: 0%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100px;
+   flex-wrap: wrap;
+}
+
+.logo {
+   width: 80%;
+   max-width: 256px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.menu{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 90%;
+   max-width: 597px;
+   flex-wrap: wrap;
+}
+
+.menu--desktop {
+   display: none;
+}
+
+ul {
+   padding: 0;
+}
+
+.item:hover{
+    color: black;
+ } 
+
+ /* start mobile */
+ .menu--mobile {
+   width: 20%;
+   display: flex;
+   align-items: flex-end;
+ }
+
+.hambu__hambu {
+   width: 50px;
+   height: 4px;
+   background-color: var(--white);
+   position: relative;
+   z-index: 2;
+   border-radius: 4px;
+   transition: all 0.4s ease-in-out;
+}
+
+.hambu__hambu::after {
+   content: '';
+   position: absolute;
+   width: 80%;
+   left: 20%;
+   height: 100%;
+   top: -220%;
+   background-color: var(--white);
+   border-radius: 4px;
+   transition: 0.2s opacity ease-in-out;
+}
+
+.hambu__hambu::before {
+  content: '';
+   position: absolute;
+   width: 80%;
+   height: 100%;
+   top: 220%;
+   left: 20%;
+   background-color: var(--white); 
+   border-radius: 4px;
+   transition: 0.4s all ease-in-out;
+}
+
+.hambu__nav {
+   display: flex;
+   position: fixed;
+   width: 100%;
+   height: 100vh;
+   z-index: 1;
+   background-color: rgba(0, 0, 0, 0.6);
+   backdrop-filter: blur(10px);
+   top: 0%;
+   left: 100%;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   opacity: 0;
+   transition: all 0.4s ease-in-out;
+}
+
+
+.active .hambu__nav {
+   left: 0;
+   opacity: 1;
+}
+
+.active .hambu__nav a {
+   color: white;
+}
+
+.active .hambu__hambu {
+   width: 40px;
+   transform: rotate(45deg);
+   background-color: white;
+}
+
+.active .hambu__hambu::after {
+   opacity: 0;
+
+}
+
+.active .hambu__hambu::before {
+   transform: rotate(90deg);
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: white;
+}
+
+@media screen and (min-width:900px) {
+   .logo {
+      padding-top: 0em;
+      width: 100%;
+   }
+
+   .menu--mobile {
+      display:none;
+   }
+
+   .menu--desktop {
+      display: flex;
+   }
+
+   .menu{
+      justify-content:space-evenly;
+      align-items: center;
+   }
+
+}

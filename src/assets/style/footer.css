@@ -1,0 +1,36 @@
+.linea{
+  padding-top: 4em;
+   display: flex;
+   justify-content: center;
+}
+
+.botonesredes{
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.botonapplemusic{
+   padding-right: 15px;
+}
+
+.botonspotify{
+   padding-right: 15px;
+}
+
+.botonfacebook{
+   padding-right: 15px;
+}
+
+.botoninstagram{
+   padding-right: 15px;
+}
+
+.textofooter{
+color: #AAA;
+font-family: Founders Grotesk;
+font-size: 25px;
+text-align: center;
+padding-top: 20px;
+}
+
